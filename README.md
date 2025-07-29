@@ -1,6 +1,6 @@
 # 🌦️ Weather App
 
-A beautiful and simple desktop weather application built using **Python** and **PyQt5**. It fetches real-time weather data from the **OpenWeatherMap API** and displays temperature, weather condition, and emojis based on current weather and time of day.
+A simple and elegant desktop weather application built using **Python** and **PyQt5**. It fetches real-time weather information from the **OpenWeatherMap API**, displaying temperature, weather description, and a weather-themed emoji—smartly adjusted for day/night conditions.
 
 ---
 
@@ -8,26 +8,44 @@ A beautiful and simple desktop weather application built using **Python** and **
 
 - 🔍 Search weather by city name
 - 🌡️ Displays temperature in Fahrenheit
-- 🌤️ Dynamic emoji based on weather conditions
-- 🧠 Smart day/night emoji for clear skies
-- 🎨 Custom-styled PyQt5 GUI
+- ⛅ Emoji that reflects weather conditions and time (☀️ / 🌙)
+- 💅 Styled PyQt5 GUI
+- 🔒 Secure API key handling with `.env`
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python 3.x
+- Python 3
 - PyQt5
 - Requests (for API calls)
-- dotenv (to handle environment variables)
+- python-dotenv (for environment variables)
 - OpenWeatherMap API
 
 ---
 
 ## 🔧 Installation
 
-### 1. Clone the Repository
+Follow these steps to set up and run the app:
 
 ```bash
+# 1. Clone the repository
 git clone https://github.com/your-username/weather_app.git
 cd weather_app
+
+
+# 2. (Optional) Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate        
+
+
+# 3. Install required packages
+pip install -r requirements.txt
+
+
+# 4. Create a .env file and add your API key
+echo "OPENWEATHER_API_KEY=your_api_key_here" > .env
+
+
+# 5. Run the application
+python weather_app.py
