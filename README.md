@@ -49,3 +49,22 @@ echo "OPENWEATHER_API_KEY=your_api_key_here" > .env
 
 # 5. Run the application
 python weather_app.py
+```
+
+## 👤 Author
+
+
+**Danish**
+
+
+**GitHub: @https://github.com/danishhly**
+
+## 🌐 API Reference
+
+**https://openweathermap.org/api**
+
+## 🤝 Contributions
+
+**Pull requests and feature suggestions are welcome!**
+
+**Feel free to fork this repo and make improvements.**
